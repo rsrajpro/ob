@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <style>
+          *{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          }
+          body
+              {
+              	display: flex;
+              	justify-content: center;
+              	align-items: center;
+              	min-height: 100vh;
+              	background: #efefef;
+              	background: linear-gradient(45deg,#FBDA61,#FF5ACD);
+              }
+            iframe{
+	                border: none;
+	                height: 41px;
+	                width: 20px;
+                  margin-top: -30px;
+	            }
+            .w-48{
+              width: 48%;
+            }
+            .kl{ 
+              background: #ff6c6c;
+              border-radius: 15px; 
+              border:1px solid rgba(255, 255, 255, 0.18);
+              backdrop-filter: blur(10px);
+              box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+            }
+            .card{
+                background:rgba(255,255,255,0.1);
+                backdrop-filter:blur(10px);
+                color: white;
+                border-radius:15px;
+                box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+                }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col text-center mt-4">
+                    <div class="card">
+                    <img class="m-3 shadow-lg p-3  bg-body-tertiary rounded" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAslJWKRsoGn0UyuxN4g3y_Av5DWLX0PJVH6egeZrVyuKcy1WSKXMdzWyDrAihJPoUZmLPe8C77kQ69dlCJnalV38sIy1yR5fUNvF9VlYuZkbGFTSy3dYq0PUENHHonFFixHyDQB1AXZFtSGrWAuHcAFNvsym2vhkbl4ZLFHZV6X8EU4Kn2UerSe2m/s1600/Untitled%20design.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div><iframe id="iframe1" src="https://sgp1.blynk.cloud/external/api/get?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v1"></iframe></div>
+                      <h5 class="card-title pb-2">Outdoor Light</h5>
+                      <div class="gap-3">
+                        <button class="btn btn-success btn-lg w-48" onclick="reloadIframe(1)" id="btn1">ON</button>
+                      <button class="btn btn-outline-danger btn-lg w-48" onclick="reloadIframe(1)" id="btn2">OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col text-center mt-4">
+                    <div class="card" >
+                    <img class="m-3 shadow-lg p-3  bg-body-tertiary rounded" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuSn-8I7PsBQHP-V2QvFREcP3f40hbGR70dgJh86TZmX6jWbY_FFO3ObvsT8HE0-hLFYWzvvYJG9OZ6tkUDrVQ9qF60O_3MA0Qi2WohorS8mtFyLZ8rWF92IVDJd6eK3Obyg7pISR4y4Xu0nCZq_B3Q8iPDPhsn9a7HuSPpvaGXx5C4GYqsZQRc3we/s1600/Your%20paragraph%20text%20%2810%29.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div><iframe id="iframe2" src="https://sgp1.blynk.cloud/external/api/get?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v2"></iframe></div>
+                      <h5 class="card-title pb-2">Outdoor Wi-Fi</h5>
+                      <div class="gap-3">
+                        <button class="btn btn-success btn-lg w-48" onclick="reloadIframe(2)" id="btn3">ON</button>
+                      <button class="btn btn-outline-danger btn-lg w-48" onclick="reloadIframe(2)" id="btn4">OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col text-center mt-4">
+                    <div class="card">
+                    <img class="m-3 shadow-lg p-3  bg-body-tertiary rounded" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjDD0LzzznEpduDylHKGSlNDXCFLE6j_A_wRzkopyOT-4oQebSIClJGa-VAEZdVF_rK1IeOYiM51JkxXzzW8e-lIcmeGNZP6e0awWXYwBTb4xoPBXsZfab3zPmyBKcTZxwPicaetLiSa5YTuThtrfPEZ9ZUJe6W93anKZ-umXWoGdeHVzjF7iwjgaA/s1600/Untitled%20design%20%281%29.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div><iframe id="iframe3" src="https://sgp1.blynk.cloud/external/api/get?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v3"></iframe></div>
+                      <h5 class="card-title pb-2">Computer Light</h5>
+                      <div class="gap-3">
+                        <button class="btn btn-success btn-lg w-48" onclick="reloadIframe(3)" id="btn5">ON</button>
+                      <button class="btn btn-outline-danger btn-lg w-48" onclick="reloadIframe(3)" id="btn6">OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col text-center mt-4">
+                    <div class="card">
+                    <img class="m-3 shadow-lg p-3  bg-body-tertiary rounded" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbtYf4wtw0AQpSxZzBRmnb7C99djWLacPjPyFIokmMHTpITc2KrrfIU6Kqx1Cl-DOvTUpMI6vYUNp4IbQA-X7WF8jZARM0QQNe6lGQYbfxB5GNatjw1gfmaDxYGbOjo3c8zOiuO_rZajyO57YQedaYDnHzjS4Ym-1_ST4JMyiIU24USU-Aa0_GumG/s1600/Your%20paragraph%20text%20%2811%29.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div><iframe id="iframe4" src="https://sgp1.blynk.cloud/external/api/get?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v4"></iframe></div>
+                      <h5 class="card-title pb-2">Computer Speaker</h5>
+                      <div class="gap-3">
+                        <button class="btn btn-success btn-lg w-48" onclick="reloadIframe(4)" id="btn7">ON</button>
+                      <button class="btn btn-outline-danger btn-lg w-48" onclick="reloadIframe(4)" id="btn8">OFF</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+</div>
+
+
+
+        </div>
+      
+
+
+
+
+
+
+
+
+        <script>
+            const button1 = document.getElementById('btn1');
+            const button2 = document.getElementById('btn2');
+            const button3 = document.getElementById('btn3');
+            const button4 = document.getElementById('btn4');
+            const button5 = document.getElementById('btn5');
+            const button6 = document.getElementById('btn6');
+            const button7 = document.getElementById('btn7');
+            const button8 = document.getElementById('btn8');
+            
+            function makeAPICall(url) {
+              fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                  console.log(data);
+                  // Do something with the data, like updating the UI
+                })
+                .catch(error => {
+                  console.error(error);
+                  // Handle errors, like displaying an error message
+                });
+            }
+            
+            button1.addEventListener('click', function() {
+              const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v1=1';
+              makeAPICall(url);
+            });
+            
+            button2.addEventListener('click', function() {
+              const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v1=0';
+              makeAPICall(url);
+            });
+            
+            button3.addEventListener('click', function() {
+              const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v2=1';
+              makeAPICall(url);
+            });
+            
+            button4.addEventListener('click', function() {
+              const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v2=0';
+              makeAPICall(url);
+            });
+            
+            button5.addEventListener('click', function() {
+              const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v3=1';
+              makeAPICall(url);
+            });
+            
+            button6.addEventListener('click', function() {
+              const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v3=0';
+              makeAPICall(url);
+            });
+            
+            button7.addEventListener('click', function() {
+              const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v4=1';
+              makeAPICall(url);
+            });
+            
+            button8.addEventListener('click', function() {
+              const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v4=0';
+              makeAPICall(url);
+            });
+            
+        </script>
+
+
+
+
+        <script>
+            function reloadIframes() {
+                var iframe1 = document.getElementById("iframe1");
+                var iframe2 = document.getElementById("iframe2");
+                var iframe3 = document.getElementById("iframe3");
+                var iframe4 = document.getElementById("iframe4");
+                setTimeout(function() {
+                    iframe1.src = iframe1.src;
+                    iframe2.src = iframe2.src;
+                    iframe3.src = iframe3.src;
+                    iframe4.src = iframe4.src;
+                }, 200); // 1 second delay
+            }
+        
+            function reloadIframe(iframeNumber) {
+                var iframe = document.getElementById("iframe" + iframeNumber);
+                setTimeout(function() {
+                    iframe.src = iframe.src;
+                }, 200); // 1 second delay
+            }
+        </script>
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    </body>
+</html>
