@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body>
+
+<div class="container">
+	<div class="row row-cols-md-2">
+		<div class="col mt-5 pt-5">
+			<div class="cards">
+				<div class="imgBx">
+					<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAslJWKRsoGn0UyuxN4g3y_Av5DWLX0PJVH6egeZrVyuKcy1WSKXMdzWyDrAihJPoUZmLPe8C77kQ69dlCJnalV38sIy1yR5fUNvF9VlYuZkbGFTSy3dYq0PUENHHonFFixHyDQB1AXZFtSGrWAuHcAFNvsym2vhkbl4ZLFHZV6X8EU4Kn2UerSe2m/s1600/Untitled%20design.jpg">
+				</div>
+				<div class="content">
+					<div class="details">
+						<h2>Light<br><span>outdoor light</span></h2>
+						<div class="data">
+							<h3><b><iframe id="iframe1" src="https://sgp1.blynk.cloud/external/api/get?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v1"></iframe></b><br><span>status</span></h3>
+							<h3><b id="count1">0</b><br><span>ON</span></h3>
+							<h3><b id="count2">0</b><br><span>OFF</span></h3>
+						</div>
+						<div class="actionBtn">
+							<button onclick="reloadIframe(1)" id="btn1">ON</button>
+							<button onclick="reloadIframe(1)" id="btn2">OFF</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col mt-5 pt-5">
+			<div class="cards">
+				<div class="imgBx">
+					<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuSn-8I7PsBQHP-V2QvFREcP3f40hbGR70dgJh86TZmX6jWbY_FFO3ObvsT8HE0-hLFYWzvvYJG9OZ6tkUDrVQ9qF60O_3MA0Qi2WohorS8mtFyLZ8rWF92IVDJd6eK3Obyg7pISR4y4Xu0nCZq_B3Q8iPDPhsn9a7HuSPpvaGXx5C4GYqsZQRc3we/s1600/Your%20paragraph%20text%20%2810%29.jpg">
+				</div>
+				<div class="content">
+					<div class="details">
+						<h2>Wi-Fi<br><span>outdoor wifi</span></h2>
+						<div class="data">
+							<h3><b><iframe id="iframe2" src="https://sgp1.blynk.cloud/external/api/get?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v2"></iframe></b><br><span>status</span></h3>
+							<h3><b id="count3">0</b><br><span>ON</span></h3>
+							<h3><b id="count4">0</b><br><span>OFF</span></h3>
+						</div>
+						<div class="actionBtn">
+							<button onclick="reloadIframe(2)" id="btn3">ON</button>
+							<button onclick="reloadIframe(2)" id="btn4">OFF</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col mt-5 pt-5">
+			<div class="cards">
+				<div class="imgBx">
+					<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjDD0LzzznEpduDylHKGSlNDXCFLE6j_A_wRzkopyOT-4oQebSIClJGa-VAEZdVF_rK1IeOYiM51JkxXzzW8e-lIcmeGNZP6e0awWXYwBTb4xoPBXsZfab3zPmyBKcTZxwPicaetLiSa5YTuThtrfPEZ9ZUJe6W93anKZ-umXWoGdeHVzjF7iwjgaA/s1600/Untitled%20design%20%281%29.jpg">
+				</div>
+				<div class="content">
+					<div class="details">
+						<h2>Light<br><span>Computer Light and Fan</span></h2>
+						<div class="data">
+							<h3><b><iframe id="iframe3" src="https://sgp1.blynk.cloud/external/api/get?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v3"></iframe></b><br><span>status</span></h3>
+							<h3><b  id="count5">0</b><br><span>ON</span></h3>
+							<h3><b  id="count6">0</b><br><span>OFF</span></h3>
+						</div>
+						<div class="actionBtn">
+							<button onclick="reloadIframe(3)" id="btn5">ON</button>
+							<button onclick="reloadIframe(3)" id="btn6">OFF</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col mt-5 pt-5">
+			<div class="cards">
+				<div class="imgBx">
+					<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBbtYf4wtw0AQpSxZzBRmnb7C99djWLacPjPyFIokmMHTpITc2KrrfIU6Kqx1Cl-DOvTUpMI6vYUNp4IbQA-X7WF8jZARM0QQNe6lGQYbfxB5GNatjw1gfmaDxYGbOjo3c8zOiuO_rZajyO57YQedaYDnHzjS4Ym-1_ST4JMyiIU24USU-Aa0_GumG/s1600/Your%20paragraph%20text%20%2811%29.jpg">
+				</div>
+				<div class="content">
+					<div class="details">
+						<h2>Speaker<br><span>computer speaker</span></h2>
+						<div class="data">
+							<h3><b><iframe id="iframe4" src="https://sgp1.blynk.cloud/external/api/get?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v4"></iframe></b><br><span>status</span></h3>
+							<h3><b id="count7">0</b><br><span>ON</span></h3>
+							<h3><b id="count8">0</b><br><span>OFF</span></h3>
+						</div>
+						<div class="actionBtn">
+							<button onclick="reloadIframe(4)" id="btn7">ON</button>
+							<button onclick="reloadIframe(4)" id="btn8">OFF</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		const button1 = document.getElementById('btn1');
+		const button2 = document.getElementById('btn2');
+		const button3 = document.getElementById('btn3');
+		const button4 = document.getElementById('btn4');
+		const button5 = document.getElementById('btn5');
+		const button6 = document.getElementById('btn6');
+		const button7 = document.getElementById('btn7');
+		const button8 = document.getElementById('btn8');
+		
+		function makeAPICall(url) {
+		  fetch(url)
+			.then(response => response.json())
+			.then(data => {
+			  console.log(data);
+			  // Do something with the data, like updating the UI
+			})
+			.catch(error => {
+			  console.error(error);
+			  // Handle errors, like displaying an error message
+			});
+		}
+		
+		button1.addEventListener('click', function() {
+		  const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v1=1';
+		  makeAPICall(url);
+		});
+		
+		button2.addEventListener('click', function() {
+		  const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v1=0';
+		  makeAPICall(url);
+		});
+		
+		button3.addEventListener('click', function() {
+		  const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v2=1';
+		  makeAPICall(url);
+		});
+		
+		button4.addEventListener('click', function() {
+		  const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v2=0';
+		  makeAPICall(url);
+		});
+		
+		button5.addEventListener('click', function() {
+		  const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v3=1';
+		  makeAPICall(url);
+		});
+		
+		button6.addEventListener('click', function() {
+		  const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v3=0';
+		  makeAPICall(url);
+		});
+		
+		button7.addEventListener('click', function() {
+		  const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v4=1';
+		  makeAPICall(url);
+		});
+		
+		button8.addEventListener('click', function() {
+		  const url = 'https://sgp1.blynk.cloud/external/api/update?token=CiuYGYQoo5VeEgO4xuniJeGV4zKBiYMM&v4=0';
+		  makeAPICall(url);
+		});
+		
+	</script>
+
+<script>
+  // Initialize count variables for each button
+  let countBtn1 = 0;
+  let countBtn2 = 0;
+  let countBtn3 = 0;
+  let countBtn4 = 0;
+  let countBtn5 = 0;
+  let countBtn6 = 0;
+  let countBtn7 = 0;
+  let countBtn8 = 0;
+
+  // Retrieve the count data from localStorage, if available
+  if (localStorage.getItem("countBtn1")) {
+    countBtn1 = parseInt(localStorage.getItem("countBtn1"));
+    document.getElementById("count1").textContent = `${countBtn1}`;
+  }
+  if (localStorage.getItem("countBtn2")) {
+    countBtn2 = parseInt(localStorage.getItem("countBtn2"));
+    document.getElementById("count2").textContent = `${countBtn2}`;
+  }
+  if (localStorage.getItem("countBtn3")) {
+    countBtn3 = parseInt(localStorage.getItem("countBtn3"));
+    document.getElementById("count3").textContent = `${countBtn3}`;
+  }
+  if (localStorage.getItem("countBtn4")) {
+    countBtn4 = parseInt(localStorage.getItem("countBtn4"));
+    document.getElementById("count4").textContent = `${countBtn4}`;
+  }
+  if (localStorage.getItem("countBtn5")) {
+    countBtn5 = parseInt(localStorage.getItem("countBtn5"));
+    document.getElementById("count5").textContent = `${countBtn5}s`;
+  }
+  if (localStorage.getItem("countBtn6")) {
+    countBtn6 = parseInt(localStorage.getItem("countBtn6"));
+    document.getElementById("count6").textContent = `${countBtn6}`;
+  }
+  if (localStorage.getItem("countBtn7")) {
+    countBtn7 = parseInt(localStorage.getItem("countBtn7"));
+    document.getElementById("count7").textContent = `${countBtn7}`;
+  }
+  if (localStorage.getItem("countBtn8")) {
+    countBtn8 = parseInt(localStorage.getItem("countBtn8"));
+    document.getElementById("count8").textContent = `${countBtn8}`;
+  }
+
+  // Add event listeners for each button
+  document.getElementById("btn1").addEventListener("click", function() {
+    countBtn1++;
+    localStorage.setItem("countBtn1", countBtn1);
+    document.getElementById("count1").textContent = `${countBtn1}`;
+  });
+  document.getElementById("btn2").addEventListener("click", function() {
+    countBtn2++;
+    localStorage.setItem("countBtn2", countBtn2);
+    document.getElementById("count2").textContent = `${countBtn2}`;
+  });
+  document.getElementById("btn3").addEventListener("click", function() {
+    countBtn3++;
+    localStorage.setItem("countBtn3", countBtn3);
+    document.getElementById("count3").textContent = `${countBtn3}`;
+  });
+  document.getElementById("btn4").addEventListener("click", function() {
+    countBtn4++;
+    localStorage.setItem("countBtn4", countBtn4);
+    document.getElementById("count4").textContent = `${countBtn4}`;
+  });
+  document.getElementById("btn5").addEventListener("click", function() {
+    countBtn5++;
+    localStorage.setItem("countBtn5", countBtn5);
+    document.getElementById("count5").textContent = `${countBtn5}`;
+  });
+  document.getElementById("btn6").addEventListener("click", function() {
+    countBtn6++;
+    localStorage.setItem("countBtn6", countBtn6);
+    document.getElementById("count6").textContent = `${countBtn6}`;
+  });
+  document.getElementById("btn7").addEventListener("click", function() {
+    countBtn7++;
+    localStorage.setItem("countBtn7", countBtn7);
+    document.getElementById("count7").textContent = `${countBtn7}`;
+  });
+  document.getElementById("btn8").addEventListener("click", function() {
+    countBtn8++;
+    localStorage.setItem("countBtn8", countBtn8);
+    document.getElementById("count8").textContent = `${countBtn8}`;
+  });
+</script>
+
+<script>
+	function reloadIframes() {
+		var iframe1 = document.getElementById("iframe1");
+		var iframe2 = document.getElementById("iframe2");
+		var iframe3 = document.getElementById("iframe3");
+  		var iframe4 = document.getElementById("iframe4");
+		setTimeout(function() {
+			iframe1.src = iframe1.src;
+			iframe2.src = iframe2.src;
+			iframe3.src = iframe3.src;
+			iframe4.src = iframe4.src;
+		}, 100); // 1 second delay
+	}
+
+	function reloadIframe(iframeNumber) {
+		var iframe = document.getElementById("iframe" + iframeNumber);
+		setTimeout(function() {
+			iframe.src = iframe.src;
+		}, 100); // 1 second delay
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
